@@ -4,7 +4,7 @@ fun main() {
     val name: String = "Lintang Balakosa Ardhana"
     val score: Int = 90
 
-    println("Name: " + name + ", Nilai: " + score)
+    println("Name: $name, Nilai: $score")
 }
 
 
