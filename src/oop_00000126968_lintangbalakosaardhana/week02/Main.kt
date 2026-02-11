@@ -71,5 +71,60 @@ fun main() {
             println("Durasi      : ${loan.loanDuration}")
             println("Total Denda : Rp ${loan.calculateFine()}")
         }
+
+        3 -> {
+            print("\nMasukkan Nama Hero: ")
+            val heroName = scanner.nextLine()
+
+            print("Masukkan Base Damage: ")
+            val damage = scanner.nextInt()
+
+            val hero = Hero(heroName, damage)
+            var enemyHp = 100
+            val enemyName = "Goblin"
+
+            println("\n=== BATTLE START ===")
+
+            while (hero.isAlive() && enemyHp > 0) {
+                println("\nHP ${hero.name}: ${hero.hp}")
+                println("HP $enemyName: $enemyHp")
+                println("1. Serang")
+                println("2. Kabur")
+                print("Pilih: ")
+
+                val choice = scanner.nextInt()
+
+                if (choice == 1) {
+                    hero.attack(enemyName)
+                    enemyHp -= hero.baseDamage
+                    if (enemyHp < 0) enemyHp = 0
+
+                    println("HP $enemyName tersisa: $enemyHp")
+
+                    if (enemyHp > 0) {
+                        val enemyDamage = (10..20).random()
+                        println("$enemyName menyerang balik! Damage: $enemyDamage")
+
+                        hero.takeDamage(enemyDamage)
+                        println("HP ${hero.name} tersisa: ${hero.hp}")
+                    }
+
+                } else if (choice == 2) {
+                    println("${hero.name} kabur!")
+                    break
+                }
+            }
+
+            println("\n=== HASIL ===")
+            if (hero.hp > 0 && enemyHp == 0) {
+                println("${hero.name} MENANG!")
+            } else if (hero.hp == 0 && enemyHp > 0) {
+                println("$enemyName MENANG!")
+            } else {
+                println("Pertarungan selesai tanpa pemenang.")
+            }
+        }
+
+        else -> println("Menu tidak valid")
     }
 }
