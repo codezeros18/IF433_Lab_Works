@@ -5,6 +5,10 @@ class Student(
     val nim:String,
     val major:String
 ){
+    constructor(name:String, nim:String) : this(name,nim,major = "Non-Matriculated"){
+        println("LOG: Menggunakan constructor jalur umum (Tanpa Jurusan).")
+    }
+
     init{
         if(nim.length != 5){
             println("WARNING: Object tercipta dengan NIM ($nim) yang tidak valid!")
