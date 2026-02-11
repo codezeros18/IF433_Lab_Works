@@ -3,8 +3,9 @@ package oop_00000126968_lintangbalakosaardhana.week02
 class Student(
     val name:String,
     val nim:String,
-    var gpa:Double = 0.0,
-    var major:String
+    var major:String,
+    var gpa:Double = 0.0
+
 ){
     constructor(name:String, nim:String) : this(name,nim,major = "Non-Matriculated"){
         println("LOG: Menggunakan constructor jalur umum (Tanpa Jurusan)")
