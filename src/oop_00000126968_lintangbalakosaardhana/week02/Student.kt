@@ -5,5 +5,6 @@ class Student(
     val nim:String,
     val major:String
 ){
+
 }
 
