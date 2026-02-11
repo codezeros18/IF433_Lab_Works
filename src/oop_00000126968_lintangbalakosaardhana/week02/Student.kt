@@ -6,7 +6,7 @@ class Student(
     val major:String
 ){
     constructor(name:String, nim:String) : this(name,nim,major = "Non-Matriculated"){
-        println("LOG: Menggunakan constructor jalur umum (Tanpa Jurusan).")
+        println("LOG: Menggunakan constructor jalur umum (Tanpa Jurusan) . #")
     }
 
     init{
