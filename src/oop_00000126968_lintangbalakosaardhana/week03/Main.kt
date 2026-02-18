@@ -2,7 +2,7 @@ package oop_00000126968_lintangbalakosaardhana.week03
 
 fun main(){
 
-    // Employee Test
+    // ====== Employee Test ======
     val e = Employee("Budi")
 
     e.salary = -1000
@@ -14,7 +14,7 @@ fun main(){
     println("Pajak yang harus dibayar : ${e.tax}")
 
 
-    // Weapon Test
+    // ====== Weapon Test ======
     val w = Weapon("Excalibur")
 
     w.damage = -50
@@ -24,4 +24,11 @@ fun main(){
     println("Damage: ${w.damage}")
 
     println("Tier: ${w.tier}")
+
+
+    // ====== Player Test ======
+    val p = Player("Lintang")
+
+    p.addXp(50)
+    p.addXp(60)
 }
