@@ -17,4 +17,11 @@ fun main() {
 
     println(d1)
     println(d1 == d2)
+
+    val original = DataUser("Lintang")
+    val copy = original.copy(name = "Budi")
+
+    val (name) = original
+    println(name)
+    println(copy)
 }
