@@ -9,4 +9,6 @@ fun main() {
     order.customer?.address?.city?.let {
         println("Kota ditemukan: $it")
     }
+
+    val mixedList: List<Any> = listOf("Hello", 123, "World", 45.6)
 }
