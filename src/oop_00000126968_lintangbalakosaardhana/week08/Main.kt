@@ -18,4 +18,9 @@ fun main() {
             println(str.length)
         }
     }
+
+    for (item in mixedList) {
+        val str = item as? String ?: "Default"
+        println(str)
+    }
 }
