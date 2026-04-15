@@ -24,5 +24,6 @@ fun main() {
         println(str)
     }
 
-    //for checkpoint 8 test
+    val risky: String? = null
+    println(risky!!.length)
 }
