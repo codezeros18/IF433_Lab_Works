@@ -1,0 +1,9 @@
+package oop_00000126968_lintangbalakosaardhana.week06
+
+interface Playable {
+    fun playMusic()
+}
+
+interface Trackable {
+    fun trackSteps()
+}
