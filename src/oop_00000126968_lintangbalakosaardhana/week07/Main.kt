@@ -38,4 +38,9 @@ fun main() {
     GameManager.startGame()
     GameManager.startGame()
     //test
+
+    println(ItemRarity.LEGENDARY.dropChance)
+
+    val weapon = Weapon.forgeStarterSword()
+    println("${weapon.item.name} - ${weapon.item.damage}")
 }
