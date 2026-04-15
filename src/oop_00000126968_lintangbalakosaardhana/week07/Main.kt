@@ -5,4 +5,10 @@ fun main() {
 
     val client = NetworkClient.create("https://api.umn.ac.id")
     println(client.baseUrl)
+
+    val user1 = User("Lintang")
+    val user2 = User("Lintang")
+
+    println(user1)
+    println(user1 == user2)
 }
