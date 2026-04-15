@@ -1,7 +1,5 @@
 package oop_00000126968_lintangbalakosaardhana.week06
 
-package oop_<nim>_<nama>.week06
-
 class SmartSpeaker(
     override val id: String,
     override val name: String
