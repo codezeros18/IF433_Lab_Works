@@ -27,4 +27,7 @@ fun main() {
     val risky: String? = null
     val safe = requireNotNull(risky) { "Data tidak boleh null!" }
     println(safe.length)
+
+    val javaData = LegacyJavaAPI.getData()!!
+    println(javaData)
 }
