@@ -1,5 +1,4 @@
 package oop_00000126968_lintangbalakosaardhana.week04
-
 fun main() {
     val vehicle = Vehicle("Toyota")
     vehicle.honk()
@@ -14,4 +13,12 @@ fun main() {
     electricCar.accelerate()
     electricCar.honk()
     electricCar.openTrunk()
+
+    val manager = Manager("Budi", 10000000)
+    manager.work()
+    println("Bonus Manager: ${manager.calculateBonus()}")
+
+    val developer = Developer("Andi", 8000000, "Kotlin")
+    developer.work()
+    println("Bonus Developer: ${developer.calculateBonus()}")
 }
