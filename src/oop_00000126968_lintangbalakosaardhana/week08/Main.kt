@@ -23,4 +23,6 @@ fun main() {
         val str = item as? String ?: "Default"
         println(str)
     }
+
+    //for checkpoint 8 test
 }
