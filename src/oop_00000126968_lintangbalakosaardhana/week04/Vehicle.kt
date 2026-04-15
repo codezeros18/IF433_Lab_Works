@@ -4,7 +4,7 @@ open class Vehicle(
     val brand: String
 ) {
 
-    fun honk() {
+    open fun honk() {
         println("$brand berbunyi: Beep beep!")
     }
 

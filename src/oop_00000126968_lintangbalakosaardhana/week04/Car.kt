@@ -1,6 +1,6 @@
 package oop_00000126968_lintangbalakosaardhana.week04
 
-class Car(
+open class Car(
     brand: String,
     val numberOfDoors: Int
 ) : Vehicle(brand) {
