@@ -8,4 +8,8 @@ class Car(
     fun openTrunk() {
         println("$brand membuka bagasi.")
     }
+
+    override fun honk() {
+        println("$brand berbunyi: Tiiin tiiiin!")
+    }
 }
