@@ -11,4 +11,11 @@ fun main() {
     }
 
     val mixedList: List<Any> = listOf("Hello", 123, "World", 45.6)
+
+    for (item in mixedList) {
+        val str = item as? String
+        if (str != null) {
+            println(str.length)
+        }
+    }
 }
