@@ -25,5 +25,6 @@ fun main() {
     }
 
     val risky: String? = null
-    println(risky!!.length)
+    val safe = requireNotNull(risky) { "Data tidak boleh null!" }
+    println(safe.length)
 }
