@@ -8,4 +8,11 @@ fun main() {
         Student("B", 60),
         Student("C", 90)
     )
+
+    val result = students
+        .filter { it.score > 70 }
+        .sortedByDescending { it.score }
+        .map { "${it.name}: ${it.score}" }
+
+    result.forEach { println(it) }
 }
