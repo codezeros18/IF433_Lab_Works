@@ -13,4 +13,12 @@ fun main() {
     // Set (hapus duplikat)
     val setData = setOf(1, 2, 2, 3, 3, 4)
     println("Set (unique): $setData")
+
+    // Map (key-value)
+    val mapData = mapOf(
+        "A" to 1,
+        "B" to 2,
+        "C" to 3
+    )
+    println("Map: $mapData")
 }
