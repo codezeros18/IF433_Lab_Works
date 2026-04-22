@@ -9,4 +9,8 @@ fun main() {
     val mutableList = mutableListOf("A", "B", "C")
     mutableList.add("D")
     println("Mutable List: $mutableList")
+
+    // Set (hapus duplikat)
+    val setData = setOf(1, 2, 2, 3, 3, 4)
+    println("Set (unique): $setData")
 }
