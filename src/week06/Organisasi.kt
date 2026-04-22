@@ -1,4 +1,13 @@
 package week06
 
-class Organisasi {
+interface Organisasi {
+    val namaOrg:String
+    val budgetRapat: Int
+    val jmlOrg: Int
+    val biayaKonsumsi: Int
+        get() = budgetRapat * jmlOrg
+    fun rapat()
+    fun keaktifan(){
+        println("Ihhh kamu aktif")
+    }
 }
