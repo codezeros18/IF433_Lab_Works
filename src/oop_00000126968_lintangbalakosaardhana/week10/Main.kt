@@ -15,4 +15,9 @@ fun main() {
 
     val result = getData("Return Value")
     println(result)
+
+    val num = NumericalStorage(10)
+    println(num.toDouble())
+
+    println(compare(10, 5))
 }
