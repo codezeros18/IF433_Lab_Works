@@ -9,4 +9,10 @@ fun main() {
 
     val pair = PairBox("Age", 20)
     println("${pair.key} = ${pair.value}")
+
+    printData(3.14)
+    printData("Generic Test")
+
+    val result = getData("Return Value")
+    println(result)
 }
