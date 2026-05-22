@@ -14,4 +14,9 @@ fun main() {
 
     println(user.name)
     println(user.age)
+
+    user.also {
+        println("(LOG) User berhasil dibuat")
+    }
 }
+
