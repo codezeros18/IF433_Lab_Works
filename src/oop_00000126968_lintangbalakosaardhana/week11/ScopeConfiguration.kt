@@ -23,5 +23,14 @@ fun main() {
         println(name)
         println(age)
     }
+
+    val configuredUser = User().apply {
+        name = "Stark"
+        age = 40
+    }.also {
+        println("(LOG) Object configured")
+    }
+
+    println(configuredUser.name)
 }
 
