@@ -51,4 +51,13 @@ fun main() {
     searchResult?.let {
         println(it.diagnose())
     }
+
+    with(homeDevices) {
+
+        println("Jumlah Device: ${this.size}")
+
+        forEach {
+            println(it.name)
+        }
+    }
 }
