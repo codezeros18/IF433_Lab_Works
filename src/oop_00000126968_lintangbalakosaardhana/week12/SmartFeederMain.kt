@@ -24,4 +24,13 @@ fun main() {
     finally {
         println("(LOG) Jadwal makan selesai diproses")
     }
+
+    runCatching {
+
+        dispenseKibble(
+            requestedGram = 30,
+            availableGram = 1000,
+            isJammed = false
+        )
+    }
 }
