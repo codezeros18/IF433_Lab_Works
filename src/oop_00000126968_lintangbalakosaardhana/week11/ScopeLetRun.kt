@@ -7,4 +7,10 @@ fun main() {
     nullableName?.let {
         println("Length: ${it.length}")
     }
+
+    val result = "Kotlin".run {
+        length * 2
+    }
+
+    println(result)
 }
