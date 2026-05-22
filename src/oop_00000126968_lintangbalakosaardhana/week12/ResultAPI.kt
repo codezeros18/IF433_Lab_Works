@@ -9,8 +9,17 @@ fun divide(a: Int, b: Int): Result<Int> {
             println("Error: ${it.message}")
         }
 
+    divide(10, 0)
+        .onSuccess {
+            println("Hasil: $it")
+        }
+        .onFailure {
+            println("Error: ${it.message}")
+        }
+
     return runCatching {
         a / b
     }
+
 
 }
