@@ -20,4 +20,8 @@ fun main() {
 
         println("Peringatan: ${e.message}")
     }
+
+    finally {
+        println("(LOG) Jadwal makan selesai diproses")
+    }
 }
