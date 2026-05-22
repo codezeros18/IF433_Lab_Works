@@ -18,5 +18,10 @@ fun main() {
     user.also {
         println("(LOG) User berhasil dibuat")
     }
+
+    with(user) {
+        println(name)
+        println(age)
+    }
 }
 
