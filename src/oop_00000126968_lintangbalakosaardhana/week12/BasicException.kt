@@ -7,5 +7,7 @@ fun main() {
         println(number)
     } catch (e: ArithmeticException) {
         println("Error: ${e.message}")
+    } finally {
+        println("Program selesai dijalankan")
     }
 }
