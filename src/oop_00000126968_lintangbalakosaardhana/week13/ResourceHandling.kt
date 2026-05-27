@@ -6,7 +6,15 @@ fun main() {
 
     val writer = File("manual.txt").printWriter()
 
+    File("safe.txt").printWriter().use {
+
+        it.println("Using use block safely")
+    }
+
     writer.println("Manual Close Example")
 
     writer.close()
+
+
+
 }
