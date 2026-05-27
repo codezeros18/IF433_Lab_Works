@@ -52,7 +52,12 @@ fun saveTrades(
                 writer.println(it.toCsv())
             }
         }
+    File("crypto_trades.csv")
+        .appendText(
+            "CORRUPT_ID,DOGEUSDT,Hold,XX,YY\n"
+        )
 }
+
 
 fun loadTrades(
     path: String
