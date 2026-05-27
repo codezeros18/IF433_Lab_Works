@@ -103,3 +103,11 @@ fun main() {
         "crypto_trades.csv"
     )
 }
+
+val loadedData = loadTrades(
+    "crypto_trades.csv"
+)
+
+val totalPnl = loadedData.sumOf {
+    it.pnl
+}
