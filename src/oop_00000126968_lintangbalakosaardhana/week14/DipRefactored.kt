@@ -18,3 +18,12 @@ class PostgreSQLDB : Database {
         println("PostgreSQL Connected")
     }
 }
+
+class SafeUserService(
+    private val database: Database
+) {
+
+    fun register() {
+        database.connect()
+    }
+}
