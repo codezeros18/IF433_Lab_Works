@@ -50,3 +50,22 @@ fun loadStudents(path: String): List<Student> {
         emptyList()
     }
 }
+
+fun main() {
+
+    val students = listOf(
+        Student(1, "Tony", 90.5),
+        Student(2, "Steve", 88.0)
+    )
+
+    saveStudents(
+        students,
+        "students.csv"
+    )
+
+    val loaded = loadStudents("students.csv")
+
+    loaded.forEach {
+        println(it)
+    }
+}
