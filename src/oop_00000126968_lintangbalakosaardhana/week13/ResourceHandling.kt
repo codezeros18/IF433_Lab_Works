@@ -11,6 +11,13 @@ fun main() {
         it.println("Using use block safely")
     }
 
+    File("notes.txt").bufferedReader().use { reader ->
+
+        reader.forEachLine {
+            println(it)
+        }
+    }
+
     writer.println("Manual Close Example")
 
     writer.close()
