@@ -14,3 +14,10 @@ interface Faxable {
 
     fun fax()
 }
+
+class BetterPrinter : Printable {
+
+    override fun print() {
+        println("Printing document...")
+    }
+}
