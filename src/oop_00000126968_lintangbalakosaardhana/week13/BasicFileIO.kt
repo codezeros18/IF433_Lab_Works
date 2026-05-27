@@ -7,4 +7,7 @@ fun main() {
     File("notes.txt").writeText(
         "Hello File IO Kotlin!\n"
     )
+    File("notes.txt").appendText(
+        "Appending new line...\n"
+    )
 }
