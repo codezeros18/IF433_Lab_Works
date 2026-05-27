@@ -10,4 +10,12 @@ fun main() {
     File("notes.txt").appendText(
         "Appending new line...\n"
     )
+    val text = File("notes.txt").readText()
+    println(text)
+
+    val lines = File("notes.txt").readLines()
+
+    lines.forEach {
+        println(it)
+    }
 }
